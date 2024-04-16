@@ -9,6 +9,14 @@
 		<title>Kathy's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<style>
+			.image.main img {
+			  max-width: 100%; 
+			  height: auto; 
+			}
+		  </style>
+		  
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -25,7 +33,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Kathy Xu</h1>
-								<p>A programming enthusiast, dog lover and graduate student major in computer science at
+								<p>A programming enthusiast, and graduate student major in computer science at
 								<a href="https://www.gatech.edu/" target="_blank">Georgia Institute of Technology.</a></p>
 							</div>
 						</div>
@@ -51,56 +59,63 @@
 								<p>I'm now a graudate student studying <b>Computer Science</b> at Georgia Institute of Technology.</p>
 								<p>I worked as a full stack software engineer at a non-profit orginazation for one years to create a webpage with front end React.js, backend Node.js and Database MongoDB </p>
 									 <br/>
-								<p>I will graduate from Georgia Institute of Technology in <b>December 2024</b>, so now I'm seeking software engineer internship 
+								<p>I will graduate from Georgia Institute of Technology in <b>Spring 2025</b>, so now I'm seeking software engineer internship 
 									and also open to full time opportunities.</p>
 							</article>
 
 						<!-- Project -->
-							<article id="work">
+						<article id="work" style="display: flex; align-items: stretch; gap: 20px; width: 100%;">
+
+							<div style="flex-grow: 1; text-align: left;">
+
 								<h2 class="major">Team management Webpage</h2>
-                                <span class="image main"><img src="images/oneCommunityGlobal/teamManagement.png" alt="" /></span>
+								<p>Developed a team management platform that streamlines the process of receiving weekly reports from team members, significantly reducing managerial workload..</p>
+								<span class="image main"><img src="images/oneCommunityGlobal/teamManagement.png" alt="" /></span>
                                 <span class="image main"><img src="images/oneCommunityGlobal/userProfile.png" alt="" /></span>
 								<span class="image main"><img src="images/oneCommunityGlobal/setFinalDayButton.png" alt="" /></span>
-								<p>Developed a team management platform that streamlines the process of receiving weekly reports from team members, significantly reducing managerial workload..</p>
-								<p>My Job: Worked as a full stack engineer, responsible for both the front end and the back end of the web app.
                                 </p>
                                 <ul>
                                     <li>Utilized <b>Node.js</b>, <b>Express.js</b>, and <b>MongoDB</b> for back-end development, while leveraging <b>React</b>, React Hooks, React Redux, and Axios for front-end development.</li>
                                     <li>Implemented full CRUD operations, including creating, deleting, and editing teams, as well as adding team members and managers, and searching teams by name.</li>
-                                    <li>Developed the REST APIs(Retrieve Posts, Create Posts, Friend Request, Like, Comment, Report) and back-end services(Notification, Connection Policy, Verification) to smooth user flow using <b>Node.JS(Express.JS)</b>.</li>
-                                    <li>Integrated Google Cloud Platform services, specifically using the Gmail API with OAuth 2.0 authorization, to enable automatic weekly email updates of team members' summaries at a specified time, further improving the communication and efficiency of the team management process.</li>
+                                    <li>Developed the REST APIs(Retrieve Posts, Create Posts, Friend Request, Like, Comment, Report) and back-end services(Notification, Connection Policy, Verification) <br>to smooth user flow using <b>Node.JS(Express.JS)</b>.</li>
+                                    <li>Integrated Google Cloud Platform services, specifically using the Gmail API with OAuth 2.0 authorization,<br>
+										to enable automatic weekly email updates of team members' summaries at a specified time, further improving the communication and efficiency of the team management process.</li>										
                                     <li>Successfully reduced manager's workload by several hours and enhanced overall efficiency of the team management process.</li>
                                 </ul>  
 								<a href="https://github.com/Kathy0704/HighestGoodNetworkApp" class="button" target="_blank">Github Repo Front End</a>
                                 <a href="https://github.com/Kathy0704/HGNRest" class="button" target="_blank">Github Repo  Back End</a>
-								<br/>
-
-
-								<h2 class="major">Multithreaded Clients</h2>
-								
-								<p>Developed a multithreaded client-server application in C, using the pthread library to create multiple threads and the boss-worker pattern to handle multiple server requests simultaneously.</p>
+							</div>
+							<div style="flex-grow: 1;">
+								<h2 class="major">Second-Hand Marketplace Platform </h2>
+								<p>Developed a second-hand marketplace with React, Node.js, and PostgreSQL, enabling users to post items and bids.
+								<span class="image main"><img src="images/secondhandMarket/loginAndRegister.png" alt="" /></span>
+								<span class="image main"><img src="images/secondhandMarket/mainMenu.png" alt="" /></span>
+								<span class="image main"><img src="images/secondhandMarket/bidItem.png" alt="" /></span>
+								</p>
                                 <ul>
-                                    <li>Built proxy server and cache server utilizing shared memory with both <b>SysV</b> Shared Memory API and POSIX Shared Memory API to improve server performance by reducing the need to retrieve content from the original web server, and utilized the cache server to efficiently serve frequently requested content.</li>
-                                    <li>Implemented mutual exclusion locks<b>(mutexes)</b> to prevent data inconsistencies due to race conditions.</li>
-                                    <li>Added functionality to the server to respond to client requests for file downloads and data transfers using <b>curl</b> library.</li>
-                                    <li>Successfully increased server efficiency and reduced wait times for clients by utilizing the cache server to serve frequently requested content.</li>
+                                    <li>Enhanced the bidding page's responsiveness and fluidity by utilizing React Hooks, significantly improving the user experience during live auctions.</li>
+									<li>Employed advanced CSS techniques, leveraging Flexbox and Grid, to deliver a visually appealing and logically structured interface, thereby elevating the overall user interface design.</li>
+									<li>Authentication and security handling credential design a secure login.</li>
+									<li>Designed the Entity Relationship Diagram and optimized SQL queries for performance using pgAdmin.</li>
+									<li>Implemented responsive UIs with React Hooks and React DOM, and improved query efficiency with indexing.</li>
                                 </ul>
-								<br/>
-								<br/>
+								<a href="https://github.com/Kathy0704/second-hand-marketplace-platform/tree/main/secondhandmarketplacebid/frontend" class="button" target="_blank">Github Repo Front End</a>
+                                <a href="https://github.com/Kathy0704/second-hand-marketplace-platform/tree/main/secondhandmarketplacebid/express%20server" class="button" target="_blank">Github Repo  Back End</a>
+							</div>
                                 
 							</article>
-
+							
 						<!-- Skill -->
 							<article id="skills">
 								<h2 class="major">Skills</h2>
 								<p>I'm glad that I live in an era when technologies are updating and iterating very fast
 									so that I can keep learning new things to improve and strengthen my knowledge and skills of software development. </p>
 								<h4>Programming Languages</h4>
-								<p>Java, JavaScript, TypeScript, C/C++, Python</p>
+								<p> Java, JavaScript, TypeScript, C/C++, Python, R</p>
 								<h4>Back End</h4>
-								<p> Node.JS, Express.JS, Django, Apache Tomcat</p>
+								<p> Node.JS, Express.JS, Spring, Spring boot, </p>
 								<h4>Front End</h4>
-								<p>React.JS, HTML, CSS, Bootstrap, Redux</p>
+								<p> React.JS, HTML, CSS, Bootstrap, Redux</p>
 								<h4>Database</h4>
 								<p>AWS DynamoDB, MySQL, MongoDB, MongoDB Atlas, PostgreSQL, Redis, SQLite, H2</p>
 								<h4>Cloud Computing</h4>
